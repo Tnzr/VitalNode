@@ -73,7 +73,7 @@ const StaticJsonDocument<200>& Max3010xSensor::getMetrics() const {
 
 String Max3010xSensor::updateState() {
   readSensorData();
-  maxim_heart_rate_and_oxygen_saturation();
+  // maxim_heart_rate_and_oxygen_saturation();
   // Update JSON Object
   CurrentState.clear();
   CurrentState["timestamp"] = getTimestamp();
